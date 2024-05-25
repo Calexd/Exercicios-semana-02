@@ -6,7 +6,10 @@
 
 function contador() {
     let contador = 0
-    
+    return function (){
+        contador += 1
+        return contador
+    }
 }
 
 let contador1 = contador();
